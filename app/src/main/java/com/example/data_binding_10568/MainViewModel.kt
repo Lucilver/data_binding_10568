@@ -12,12 +12,12 @@ class MainViewModel: ViewModel() {
 
     val editTextContent = MutableLiveData<String>()
 
-    private val _displayedEdittextContent = MutableLiveData<String>()
+    private val _displayedEditTextContent = MutableLiveData<String>()
     val displayedEditTextContent: LiveData<String>
-        get() = _displayedEdittextContent
+        get() = _displayedEditTextContent
 
     fun onDisplayEditTextContentClick(){
-        _displayedEdittextContent.value = editTextContent.value
+        _displayedEditTextContent.value = editTextContent.value
     }
 
     fun onSelectRandomEditTextFruit(){
